@@ -1,0 +1,14 @@
+body {
+	background-attachment: fixed;
+	background-color: #3599FF;
+	background-image: url("images/water-background.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	margin: 15px;
+	color: #fff;
+}
+
+a {
+	color: #fff;
+}
