@@ -1,14 +1,48 @@
 body {
-	background-attachment: fixed;
 	background-color: #3599FF;
-	background-image: url("images/water-background.jpg");
-	background-position: center top;
-	background-repeat: no-repeat;
-	font-size: 12px;
-	margin: 15px;
+	font-size: 14px;
 	color: #fff;
 }
 
 a {
+	color: #000;
+}
+
+#header {
+	background-color: rgba(255, 255, 255, .9);
+	color: #000;
+	font-size: 16px;
+}
+
+#banner {
+	background-color: #999999;
+}
+
+#background {
+	background-image: url("images/water-background.jpg");
+	background-color: #3599FF;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 150px;
+}
+
+.padding {
+	padding: 10px;
+}
+
+.padding-left {
+	padding-left: 7%;
+}
+
+.margin-right {
+	margin-right: 3%;
+}
+
+.text-white {
 	color: #fff;
+}
+
+#serviceArea {
+	font-size: 18px;
 }

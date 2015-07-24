@@ -34,16 +34,18 @@ $("#ecoFriendly").append(bannerImg);
 var serviceAreaUL = '<h3>Service Areas</h3><ul id="serviceArea" class="list-inline"></ul>';
 $("#banner").append(serviceAreaUL);
 
-var natChemLI = '<li>%data%</li>';
+var natChemLI = '<li><i class="fa fa-tint margin-right"></i>%data%</li>';
+var locationLI = '<li class="margin-right"><i class="fa fa-map-marker">%data%</i>';
+var busInfoLI = '<li>%data%</li>'
 
 for (var area in natChem.serviceArea) {
-	var formattedServiceArea = natChemLI.replace("%data%", natChem.serviceArea[area]);
+	var formattedServiceArea = locationLI.replace("%data%", natChem.serviceArea[area]);
 	$("#serviceArea").append(formattedServiceArea);
 }
 
-var weeklyServiceOne = '<div class="col-md-4"><h3>Chemical Only Service</h3><ul id="chemService"></ul></div>';
-var weeklyServiceTwo = '<div class="col-md-4"><h3>Chemical Filter Service</h3><ul id="filterService"></ul></div>';
-var weeklyServiceThree = '<div class="col-md-4"><h3>Chemical Filter <em>Service Plus</em></h3><ul id="servicePlus"></ul></div>';
+var weeklyServiceOne = '<div class="col-md-4 padding-left"><h3>Chemical Only Service</h3><ul id="chemService" class="list-unstyled"></ul></div>';
+var weeklyServiceTwo = '<div class="col-md-4 padding-left"><h3>Chemical Filter Service</h3><ul id="filterService" class="list-unstyled"></ul></div>';
+var weeklyServiceThree = '<div class="col-md-4 padding-left"><h3>Chemical Filter <em>Service Plus</em></h3><ul id="servicePlus" class="list-unstyled"></ul></div>';
 $("#weeklyServices").append(weeklyServiceOne);
 $("#weeklyServices").append(weeklyServiceTwo);
 $("#weeklyServices").append(weeklyServiceThree);
@@ -72,7 +74,7 @@ var businessInfo = '<ul id="busInfo" class="list-inline"></ul>';
 $("#businessInfo").append(businessInfo);
 
 for (var info in natChem.businessInfo) {
-	var formattedBusinessInfo = natChemLI.replace("%data%", natChem.businessInfo[info]);
+	var formattedBusinessInfo = busInfoLI.replace("%data%", natChem.businessInfo[info]);
 	$("#busInfo").append(formattedBusinessInfo);
 }
 
