@@ -14,28 +14,14 @@ var natChem = {
 	"disclaimer" : "Disclaimer: Natural Chemistry Pool Services uses Natural Chemistry L.P. products but is not affiliated or associated with Natural Chemistry L.P. in any way."
 }
 
-var logo = '<img src="images/200x100.png" alt="natural chemistry pool services logo" />'
-$("#logo").append(logo);
+var serviceAreaUL = '<h1>Pool Service Areas</h1><ul id="serviceArea" class="list-inline"></ul>';
+$("#bannerLeft").append(serviceAreaUL);
 
-var weeklyServices = '<li><a href="#">Weekly Services</a></li>'
-var contactUs = '<li><a href="#">Contact Us</a></li>'
-$("#siteLinks").append(weeklyServices);
-$("#siteLinks").append(contactUs);
-
-var phoneContact = natChem.contact[0].phone;
-$("#phone").append(phoneContact);
-var emailContact = '<a href="mailto:#" target="_blank">%data%</a>';
-var formattedEmail = emailContact.replace("#", natChem.contact[0].email).replace("%data%", natChem.contact[0].email);
-$("#email").append(formattedEmail);
-
-var bannerImg = '<img class="img-responsive" src="images/eco-drought-friendly-banner.jpg" alt="eco and drought friendly pool services" />'
-$("#ecoFriendly").append(bannerImg);
-
-var serviceAreaUL = '<h3>Service Areas</h3><ul id="serviceArea" class="list-inline"></ul>';
-$("#banner").append(serviceAreaUL);
+var contactInfo = '<p style="padding-top: 45px;"><i class="fa fa-phone"></i> 916-956-0764' + '<br>' + '<a href="mailto:naturalchem@live.com" target="_blank">naturalchem@live.com</a>' + '</p>';
+$("#bannerRight").append(contactInfo);
 
 var natChemLI = '<li><i class="fa fa-tint margin-right"></i>%data%</li>';
-var locationLI = '<li class="margin-right"><i class="fa fa-map-marker">%data%</i>';
+var locationLI = '<li class="margin-right marker-font"><i class="fa fa-map-marker">%data%</i>';
 var busInfoLI = '<li>%data%</li>'
 
 for (var area in natChem.serviceArea) {
@@ -43,9 +29,9 @@ for (var area in natChem.serviceArea) {
 	$("#serviceArea").append(formattedServiceArea);
 }
 
-var weeklyServiceOne = '<div class="col-md-4 padding-left"><h3>Chemical Only Service</h3><ul id="chemService" class="list-unstyled"></ul></div>';
-var weeklyServiceTwo = '<div class="col-md-4 padding-left"><h3>Chemical Filter Service</h3><ul id="filterService" class="list-unstyled"></ul></div>';
-var weeklyServiceThree = '<div class="col-md-4 padding-left"><h3>Chemical Filter <em>Service Plus</em></h3><ul id="servicePlus" class="list-unstyled"></ul></div>';
+var weeklyServiceOne = '<div class="col-md-4"><h3>Chemical Only Service <span class="label label-primary">$59</span></h3><ul id="chemService" class="list-unstyled"></ul></div>';
+var weeklyServiceTwo = '<div class="col-md-4"><h3>Chemical Filter Service <span class="label label-primary">$69</span></h3><ul id="filterService" class="list-unstyled"></ul></div>';
+var weeklyServiceThree = '<div class="col-md-4"><h3>Chemical Filter <em>Service Plus</em> <span class="label label-primary">$89</span></h3><ul id="servicePlus" class="list-unstyled"></ul></div>';
 $("#weeklyServices").append(weeklyServiceOne);
 $("#weeklyServices").append(weeklyServiceTwo);
 $("#weeklyServices").append(weeklyServiceThree);
@@ -77,9 +63,3 @@ for (var info in natChem.businessInfo) {
 	var formattedBusinessInfo = busInfoLI.replace("%data%", natChem.businessInfo[info]);
 	$("#busInfo").append(formattedBusinessInfo);
 }
-
-var conditionerFee = natChem.fee;
-$("#conditionerFee").append(conditionerFee);
-
-var disclaimer = natChem.disclaimer;
-$("#disclaimer").append(disclaimer);
