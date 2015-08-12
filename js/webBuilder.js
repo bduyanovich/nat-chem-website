@@ -29,9 +29,9 @@ for (var area in natChem.serviceArea) {
 	$("#serviceArea").append(formattedServiceArea);
 }
 
-var weeklyServiceOne = '<div class="col-md-4"><h3>Chemical Only Service <span class="label label-primary">$59</span></h3><ul id="chemService" class="list-unstyled"></ul></div>';
-var weeklyServiceTwo = '<div class="col-md-4"><h3>Chemical Filter Service <span class="label label-primary">$69</span></h3><ul id="filterService" class="list-unstyled"></ul></div>';
-var weeklyServiceThree = '<div class="col-md-4"><h3>Chemical Filter <em>Service Plus</em> <span class="label label-primary">$89</span></h3><ul id="servicePlus" class="list-unstyled"></ul></div>';
+var weeklyServiceOne = '<div class="col-lg-4"><h3>Chemical Only Service <span class="label label-primary">$59</span></h3><ul id="chemService" class="list-unstyled"></ul></div>';
+var weeklyServiceTwo = '<div class="col-lg-4"><h3>Chemical Filter Service <span class="label label-primary">$69</span></h3><ul id="filterService" class="list-unstyled"></ul></div>';
+var weeklyServiceThree = '<div class="col-lg-4"><h3>Chemical Filter <em>Service Plus</em> <span class="label label-primary">$89</span></h3><ul id="servicePlus" class="list-unstyled"></ul></div>';
 $("#weeklyServices").append(weeklyServiceOne);
 $("#weeklyServices").append(weeklyServiceTwo);
 $("#weeklyServices").append(weeklyServiceThree);

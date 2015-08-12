@@ -1,7 +1,11 @@
-.navbar {
-	height: 100px;
+#header {
+	height: 175px;
+}
+
+#logo-container {
+	width: 63%;
 	background-color: #fff;
-	border: 1px solid rgb(31, 131, 180);
+	border-radius: 10px;
 }
 
 hr {
@@ -24,9 +28,9 @@ hr {
 }
 
 .marker-font {
-	font-size: 16px;
+	font-size: 1.3em;
 }
 
 footer {
-	font-size: 11px;
+	font-size: 0.9em;
 }
